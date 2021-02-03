@@ -1,0 +1,19 @@
+.review {
+  font-size: 14px;
+  max-width: 1024px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.showMore {
+  text-transform: capitalize;
+  color: #be0000;
+  background-color: transparent;
+  border-color: transparent;
+}

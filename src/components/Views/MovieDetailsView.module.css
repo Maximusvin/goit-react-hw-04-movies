@@ -1,0 +1,11 @@
+.nav {
+  margin-bottom: 30px;
+}
+
+.link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.active {
+  color: red;
+}

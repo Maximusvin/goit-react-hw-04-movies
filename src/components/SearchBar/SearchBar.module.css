@@ -1,0 +1,22 @@
+.form {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  color: #363636;
+  margin: 0 auto;
+  width: 400px;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid #242424;
+  border-radius: 15px;
+  padding-left: 25px;
+  margin-right: 15px;
+}
+
+.button {
+  background-color: transparent;
+  border: transparent;
+}

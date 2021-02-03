@@ -1,0 +1,10 @@
+.title {
+  font-size: 18px;
+}
+
+.list {
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}

@@ -1,0 +1,54 @@
+.article {
+  padding: 30px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.titleBlock {
+  display: inline-block;
+}
+
+.movieTitle {
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+.image {
+  margin-right: 15px;
+}
+
+.description {
+  padding: 70px 0;
+  display: inline-block;
+  max-width: 400px;
+}
+
+.title {
+  color: red;
+}
+
+.vote {
+  color: red;
+}
+
+.voteText {
+  margin-bottom: 25px;
+}
+
+.genresList {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.overview {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.link:hover {
+  color: red;
+}
+
+.icon {
+  font-size: 35px;
+}

@@ -1,13 +1,35 @@
-import Layout from './Layout/Layout';
+import { lazy, Suspense } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Loader from 'react-loader-spinner';
+import AppBar from './AppBar/AppBar';
+import Container from './Layouts/Container';
 
-import './App.css';
+const HomeView = lazy(() => import('./Views/HomeView'));
+const SearchMoviesView = lazy(() =>
+  import('./Views/SearchMoviesView' /* webpackChunkName: "home-view" */),
+);
+const MovieDetailsView = lazy(() =>
+  import(
+    './Views/MovieDetailsView' /* webpackChunkName: "movie-details-view" */
+  ),
+);
 
 function App() {
   return (
-    <Layout>
-      <h1>Home Work #2.2</h1>
-      <div>Hello</div>
-    </Layout>
+    <>
+      <Container>
+        <AppBar />
+        <Suspense
+          fallback={<Loader type="Rings" timeout={10000} color="#ff0000" />}
+        >
+          <Switch>
+            <Route path="/" exact component={HomeView} />
+            <Route path="/movies" component={SearchMoviesView} exact />
+            <Route path="/movies/:movieId" component={MovieDetailsView} />
+          </Switch>
+        </Suspense>
+      </Container>
+    </>
   );
 }
 
